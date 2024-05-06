@@ -46,7 +46,7 @@ const Home = () => {
   return (
     <View style={style.conteiner}>
 
-        <Header name ="Oswaldo Jales"/>
+        <Header name ="Amélie Maria"/>
 
         <Balanco saldo = "5000,00" despesas = "-3000,00"  />
 

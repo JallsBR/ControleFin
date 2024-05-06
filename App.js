@@ -1,9 +1,14 @@
 import Home from './src/pages/Home';
-import {View, Text, StyleSheet} from 'react-native';
+import Login from './src/pages/Login';
+import CadastroUsuario from './src/pages/CadastroUsuario';
+import CadastroMovimento from './src/pages/CadastroMovimento';
 
 const App = () => {
   return (
-      <Home/>
+    <CadastroMovimento/>
+    //<CadastroUsuario/>
+      //<Login/>
+      //<Home/>
   );
 }
 
