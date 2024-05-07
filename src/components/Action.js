@@ -9,21 +9,21 @@ const Action = () => {
         
         <TouchableOpacity style={style.actionButton}>
             <View style={style.areaButton}>
-                <AntDesign name='caretleft' size={26} color='#000'/>
+                <AntDesign name='caretleft' size={18} color='#000'/>
             </View>
             <Text>Entradas</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={style.actionButton}>
             <View style={style.areaButton}>
-                <AntDesign name='caretright' size={26} color='#000'/>
+                <AntDesign name='caretright' size={18} color='#000'/>
             </View>
             <Text>Saídas</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={style.actionButton}>
             <View style={style.areaButton}>
-                <AntDesign name='caretup' size={26} color='#000'/>
+                <AntDesign name='caretup' size={18} color='#000'/>
             </View>
             <Text>Investimentos</Text>
         </TouchableOpacity>
@@ -36,10 +36,9 @@ export default Action;
 
 const style = StyleSheet.create({
     conteiner:{
-      maxHeight: 80,
+      maxHeight: 65,
       marginStart: 14,
       marginTop: 14,
-      paddingEnd: 14,
     },
     actionButton:{
       alignItems: 'center',
@@ -47,8 +46,8 @@ const style = StyleSheet.create({
     },
     areaButton:{
       backgroundColor: '#ccc',
-      height: 60,
-      width: 60,
+      height: 30,
+      width: 30,
       borderRadius: 30,
       justifyContent: 'center',
       alignItems: 'center',

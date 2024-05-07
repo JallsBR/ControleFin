@@ -39,7 +39,7 @@ const style = StyleSheet.create({
         alignItems:'center',
         justifyContent: 'center',
         backgroundColor:'#1757a7',
-        paddingTop: statusBarHeigt,
+        paddingTop: statusBarHeigt*3,
         paddingBottom:600,
         paddingEnd:16,
         paddingStart: 16

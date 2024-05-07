@@ -75,7 +75,8 @@ const style = StyleSheet.create({
     title:{
         fontSize: 18,
         fontWeight: "bold",
-        padding: 14,
+        paddingStart: 14,
+        paddingBottom: 8,
     },
     list:{
       flex:1,

@@ -13,7 +13,7 @@ const CadastroUsuario = () => {
             
         <View style={style.content}>
             <TouchableOpacity style={style.buttonUser}>
-            <Feather name="user" size={80} color="#FFF"/>
+            <Feather name="user" size={60} color="#FFF"/>
             </TouchableOpacity>
         </View>
 
@@ -47,19 +47,19 @@ const style = StyleSheet.create({
         paddingStart: 16
     },
     buttonUser:{
-        marginTop: 200,
-        width: 104,
-        height: 104,
+        marginTop: 320,
+        width: 84,
+        height: 84,
         backgroundColor: 'rgba(255,255,255, 0.5)',
         justifyContent: 'center',
         alignItems: "center",
-        borderRadius: 144 / 2,
+        borderRadius: 84/ 2,
     },
     title:{
         color: '#FFF',
         fontSize: 21,
         fontWeight: "bold",
-        padding: 14,
+        padding: 8,
     },
     input:{
         backgroundColor: '#DDD',
@@ -69,16 +69,15 @@ const style = StyleSheet.create({
         margin: 5,
         borderRadius: 15,
         width: "80%",
-        marginTop: 10,
+        marginTop: 5,
     },
     links:{
-        margin: 10,
+ 
         fontSize: 13,
         color: '#fff',
     },
     esqueci:{
         textAlign:'right',
-        margin: 5,
         fontSize: 13,
         color: '#fff',
         width: "80%",
@@ -92,6 +91,6 @@ const style = StyleSheet.create({
         backgroundColor: 'rgba(255,255,255, 0.5)',
         borderRadius: 35,
         width: "80%",
-        margin: 15,
+        margin: 5,
     }
 });

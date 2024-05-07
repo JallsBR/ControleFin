@@ -22,8 +22,6 @@ const CadastroMovimento = () => {
 
         <Balanco saldo = "5000,00" despesas = "-3000,00"  />
 
-        <Action/>
-
         <Text style={style.title}> Nova movimentação </Text>
 
         <View style={style.form}>
