@@ -1,35 +1,49 @@
 import {View, Text, StyleSheet,StatusBar, TouchableOpacity,TextInput } from 'react-native';
+import React, {useState} from 'react';
 import {Feather} from '@expo/vector-icons'
+
 
 const statusBarHeigt = StatusBar.currentHeight ? StatusBar.currentHeight + 22 : 65;
 
 
 
 
+
+
 const Login = () => {
-  return (
-        
-    <View style={style.conteiner}>
-            
-        <View style={style.content}>
-            <TouchableOpacity style={style.buttonUser}>
-            <Feather name="user" size={100} color="#FFF"/>
-            </TouchableOpacity>
+    const [email, setEmail] = useState('')
+    const [senha, setSenha] = useState('')
+
+    function entrar(){
+        const data ={
+            email,
+            senha,
+        }
+        console.log(data);
+    }
+    return (
+
+        <View style={style.conteiner}>
+
+            <View style={style.content}>
+                <TouchableOpacity style={style.buttonUser}>
+                <Feather name="user" size={100} color="#FFF"/>
+                </TouchableOpacity>
+            </View>
+
+            <Text style={style.title}> Bem vindo de volta! </Text>
+
+            <TextInput style={style.input} placeholder="E-mail" placeholderTextColor={'#888'} onChangeText={setEmail} value={email}/>
+            <TextInput style={style.input} placeholder="Senha" placeholderTextColor={'#888'} secureTextEntry={true} onChangeText={setSenha} value={senha} />
+            <Text style={style.esqueci}> Esqueci a senha </Text>
+
+            <Text style={style.entrar} onPress={entrar}> Entrar </Text>
+
+            <Text  style={style.links}> Criar nova conta </Text>
+
+
         </View>
-
-        <Text style={style.title}> Bem vindo de volta! </Text>
-        
-        <TextInput style={style.input} placeholder="E-mail" placeholderTextColor={'#888'}/>
-        <TextInput style={style.input} placeholder="Senha" placeholderTextColor={'#888'}/>
-        <Text style={style.esqueci}> Esqueci a senha </Text>
-
-        <Text style={style.entrar}> Entrar </Text>
-
-        <Text  style={style.links}> Criar nova conta </Text>
-
-
-    </View>
-  );
+);
 }
 
 export default Login;
@@ -39,7 +53,7 @@ const style = StyleSheet.create({
         alignItems:'center',
         justifyContent: 'center',
         backgroundColor:'#1757a7',
-        paddingTop: statusBarHeigt*3,
+        paddingTop: statusBarHeigt*4,
         paddingBottom:600,
         paddingEnd:16,
         paddingStart: 16

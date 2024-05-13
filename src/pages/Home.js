@@ -71,6 +71,7 @@ const style = StyleSheet.create({
     conteiner:{
         flex: 1,
         backgroundColor:'#e4e7d9',
+
     },
     title:{
         fontSize: 18,

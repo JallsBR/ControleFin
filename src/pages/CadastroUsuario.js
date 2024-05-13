@@ -13,7 +13,7 @@ const CadastroUsuario = () => {
             
         <View style={style.content}>
             <TouchableOpacity style={style.buttonUser}>
-            <Feather name="user" size={60} color="#FFF"/>
+            <Feather name="user" size={80} color="#FFF"/>
             </TouchableOpacity>
         </View>
 
@@ -22,8 +22,8 @@ const CadastroUsuario = () => {
         <TextInput style={style.input} placeholder="Nome" placeholderTextColor={'#888'}/>
         <TextInput style={style.input} placeholder="Fone" placeholderTextColor={'#888'}/>
         <TextInput style={style.input} placeholder="E-mail" placeholderTextColor={'#888'}/>
-        <TextInput style={style.input} placeholder="Senha" placeholderTextColor={'#888'}/>
-        <TextInput style={style.input} placeholder="Confirmar Senha" placeholderTextColor={'#888'}/>
+        <TextInput style={style.input} placeholder="Senha" placeholderTextColor={'#888'} secureTextEntry={true} />
+        <TextInput style={style.input} placeholder="Confirmar Senha" placeholderTextColor={'#888'} secureTextEntry={true}/>
 
         <Text style={style.criar}> Criar Conta </Text>
 
@@ -41,19 +41,19 @@ const style = StyleSheet.create({
         alignItems:'center',
         justifyContent: 'center',
         backgroundColor:'#1757a7',
-        paddingTop: statusBarHeigt,
+        paddingTop: statusBarHeigt*3,
         paddingBottom:600,
         paddingEnd:16,
         paddingStart: 16
     },
     buttonUser:{
         marginTop: 320,
-        width: 84,
-        height: 84,
+        width: 124,
+        height: 124,
         backgroundColor: 'rgba(255,255,255, 0.5)',
         justifyContent: 'center',
         alignItems: "center",
-        borderRadius: 84/ 2,
+        borderRadius: 124/ 2,
     },
     title:{
         color: '#FFF',

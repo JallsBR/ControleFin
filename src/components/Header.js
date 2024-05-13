@@ -20,7 +20,7 @@ export default Header;
 const style = StyleSheet.create({
     conteiner:{
         backgroundColor:'#1757a7',
-        paddingTop: 25,
+        paddingTop: 60,
         paddingBottom:44,
         paddingEnd:16,
         paddingStart: 16,
