@@ -14,8 +14,8 @@ let list = [
   },
   {
     id: 2,
-    nome: 'Pensão Ex-Mulher',
-    valor: '1500,00',
+    nome: 'Net',
+    valor: '220,00',
     data: '05/05/2024',
     tipo: 'd'
   },
@@ -46,9 +46,9 @@ const Home = () => {
   return (
     <View style={style.conteiner}>
 
-        <Header name ="Amélie Maria"/>
+        <Header name ="Oswaldo Jales"/>
 
-        <Balanco saldo = "5000,00" despesas = "-3000,00"  />
+        <Balanco saldo = "8500,00" despesas = "-1000,00"  />
 
         <Action/>
 
